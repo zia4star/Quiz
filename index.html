@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bible Quiz</title>
+</head>
+
+<body>
+    <div class="bible-quiz">
+        <div class="quiz-app">
+            <div class="start-screen" id="start" style="display: none;">
+                <img src="assets/images/bible-quiz.png" class="bq">
+            </div>
+            <div class="quiz" id="quiz-screen" style="display: block;">
+                <div class="time-bar">
+                    <div class="time" id="time-left">  <span class="time-left">Total Time:1m</span></div>
+                </div>
+                <div class="num-of-question">
+                    <h3 class="que-text">Questions <span id="current-question"> 1</span> / <span id="total-num-of-question"> 15</span></h3>
+                    <h3 class="lines">-----------------------------------------------------------</h3>
+                </div>
+                <div class="question">
+                    <h1 id="question">What is the first book in the bible?</h1>
+                </div>
+                <div class="options">
+                    <button class="btn" id="opt1">Exodus</button>
+                    <button class="btn" id="opt2">Genesis</button>
+                    <button class="btn" id="opt3">Matthew</button>
+                    <button class="btn" id="opt4">Psalm</button>
+                </div>
+                <div class="next-btn">
+                    <button id="next-que">Next</button>
+                </div>
+            </div>
+            <div class="result" id="result-screen" style="display: block;">
+                <div class="user-score">Score : </div>
+                <!-- Add restart button -->
+                <button id="restart-btn">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
